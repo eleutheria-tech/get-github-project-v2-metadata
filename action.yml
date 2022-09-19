@@ -1,11 +1,39 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'Get GitHub Project V2 Metadata'
+description: "This action outputs the metadata of your organization's GitHub Project."
+branding:
+  icon: 'flag'
+  color: 'purple'
+
 inputs:
-  milliseconds: # change this
+  gh_token:
+    description: 'GitHub Token with org permission'
     required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+    default: ''
+  org:
+    description: "Your organization's name"
+    required: false
+    default: '' # defaults to github.context.repo.owner
+  project_number:
+    description: "Github Project's number in your organization"
+    required: true
+    default: ''
+  single_select_field_name:
+    description: 'Single select field name'
+    required: false
+    default: ''
+  single_select_field_option_name:
+    description: 'Option name of the supplied single select field'
+    required: false
+    default: ''
+
+outputs:
+  project_id:
+    description: 'ID of yur GitHub Project'
+  single_select_field_id:
+    description: 'ID of the supplied single select field'
+  single_select_field_option_id:
+    description: 'ID of the supplied single select field option'
+
 runs:
   using: 'node16'
   main: 'dist/index.js'
