@@ -1,4 +1,4 @@
-name: 'Get GitHub Project V2 Metadata'
+name: 'Get GitHub ProjectV2 Metadata'
 description: "This action outputs the metadata of your organization's GitHub Project."
 branding:
   icon: 'flag'
