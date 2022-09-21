@@ -1,8 +1,8 @@
 {
-  "name": "typescript-action",
-  "version": "0.0.0",
-  "private": true,
-  "description": "TypeScript template action",
+  "name": "@eleutheria-tech/get-github-project-v2-metadata",
+  "version": "0.0.1",
+  "private": false,
+  "description": "This action outputs your GitHub Project's metadata with the latest ProjectV2 API.",
   "main": "lib/main.js",
   "scripts": {
     "build": "tsc",
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/typescript-action.git"
+    "url": "git+https://github.com/eleutheria-tech/get-github-project-v2-metadata.git"
   },
   "keywords": [
     "actions",
     "node",
     "setup"
   ],
-  "author": "",
+  "author": "June Eleutheria (https://github.com/june21x)",
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.9.1",
